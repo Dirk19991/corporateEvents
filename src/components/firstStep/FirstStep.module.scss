@@ -1,0 +1,57 @@
+.firstStepWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+.header {
+  font-size: 1.6rem;
+}
+
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  user-select: none;
+}
+
+.radioContainer input:checked ~ .customRadio {
+  background-color: #2196f3; /* Change to your desired color */
+}
+
+.radioContainer input:checked ~ .customRadio::after {
+  display: block;
+}
+
+.customRadio {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Style the checkmark/indicator (the dot inside the radio button) */
+.customRadio::after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
