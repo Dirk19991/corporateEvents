@@ -27,7 +27,10 @@ export const FirstStep = () => {
         Определите тип корпоративного мероприятия
       </div>
       <label className={styles.radioContainer}>
-        <div>Мероприятия производственной направленности</div>
+        <span>
+          Мероприятия производственной направленности (норма на сотрудника не
+          более <strong>8 тыс. руб.</strong>)
+        </span>
         <input
           className={styles.radioInput}
           onChange={handleChange}
@@ -39,7 +42,11 @@ export const FirstStep = () => {
         <span className={styles.customRadio}></span>
       </label>
       <label className={styles.radioContainer}>
-        Мероприятия развлекательного характера
+        <span>
+          Мероприятия развлекательного характера (норма на сотрудника не более{' '}
+          <strong>5 тыс. руб.</strong>)
+        </span>
+
         <input
           className={styles.radioInput}
           onChange={handleChange}
